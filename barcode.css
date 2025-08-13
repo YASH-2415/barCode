@@ -1,0 +1,91 @@
+:root{
+    --bg-color:#513a3a;
+    --primary-color:#793737;
+    --border-rad:8px;
+    --col:#fff;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+ height:100vh;
+ width:auto;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background-color:var(--bg-color);
+
+ 
+}
+.box{
+  background-color:var(--primary-color);
+  width:400px;
+  padding:40px;
+  border-radius:var(--border-rad);  
+}
+.Qr-header h1{
+    font-size: 26px;
+    text-align:center;
+    margin-bottom:24px;
+    text-transform:uppercase ;
+    color:var(--col);
+}
+.Qr-header input{
+    margin-block:12px;
+    width:100%;
+}
+.Qr-header input,select{
+   padding:10px;
+   border-radius:var(--border-rad);
+}
+.Qr-header label{
+    color:var(--col);
+    font-size:20px;
+}
+.Qr-header div{
+    display:flex;
+    justify-content:space-between;
+
+}
+.Qr-footer {
+   
+    display:flex;
+    justify-content:center ;
+}
+.Qr-footer a{
+    margin-inline:2px;
+    text-decoration:none;
+    background-color:var(--col);
+    color:var(--primary-color);
+    padding:14px 23px;
+    border-radius: var(--border-rad);
+    font-weight:600;
+}
+
+.qr-body{
+    display:grid;
+    place-items: center;
+    padding:20px;
+}
+.qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    padding:20px;
+    border:0.5px solid,var(--col);
+    border-radius:var(--border-rad);
+}
+@media screen and (max-width:520px){
+    .box{
+        width:80%
+    }
+    .qr-footer a{
+        padding:12px;
+        font-size:16px;
+    }
+    
+}
